@@ -1,0 +1,115 @@
+ @import url('https://fonts.googleapis.com/css2?family=Exo:wght@500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Germania+One&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     cursor: pointer;
+     /* font-family: 'Germania One', cursive; */
+     font-family: 'Exo', sans-serif;
+ }
+
+ nav {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: rgb(135, 0, 0);
+     color: rgb(255, 255, 255);
+     padding: 20px;
+ }
+
+ ul {
+     display: flex;
+ }
+
+ ul li {
+     list-style: none;
+     padding: 0 13px;
+     font-size: 15px;
+ }
+
+ ul li a {
+     color: aliceblue;
+     text-decoration: none;
+ }
+
+ ul li a:hover {
+     color: burlywood;
+ }
+
+ main {
+     min-height: 87vh;
+ }
+
+ .logo img {
+     width: 16px;
+     filter: invert(1);
+ }
+
+ .logo>span {
+     font-size: 20px;
+ }
+
+
+ .container {
+     max-width: 80vw;
+     margin: auto;
+     padding: 15px;
+ }
+
+ .container>h1 {
+     padding: 12px 0;
+ }
+
+ input[type='text'] {
+     min-width: 23vw;
+     padding: 3px 12px;
+     border: 2px solid black;
+     border-radius: 4px;
+     font-size: 20px;
+ }
+
+ .btn {
+     background-color: rgb(135, 0, 0);
+     color: white;
+     padding: 6px;
+     border-radius: 12px;
+ }
+
+ .btn:hover {
+     color: burlywood;
+ }
+
+ footer {
+     font-size: 12px;
+     background-color: black;
+     color: aliceblue;
+     display: flex;
+     justify-content: center;
+     padding: 6px;
+     align-items: center;
+ }
+
+ #resultCont div::first-letter {
+     text-transform: uppercase;
+ }
+
+ @media only screen and (max-width: 600px) {
+
+     .container {
+         font-size: 12px;
+     }
+
+     nav {
+         flex-direction: column;
+     }
+
+     .logo {
+         padding: 6px 0;
+     }
+
+     .logo img {
+         width: 15px;
+         filter: invert(1);
+     }
+ }
